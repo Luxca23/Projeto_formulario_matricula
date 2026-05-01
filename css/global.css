@@ -1,0 +1,9 @@
+:root{
+    --cor-primaria: #ff8800;
+    --cor-secundaria: rgb(253, 180, 45);
+    --cor-terciaria: wheat;
+    --estilo-fonte: "Poppins", sans-serif;
+
+    /*fonte e texto*/
+    --tamanho-fonte: 1rem; /*16px 400 Poppins*/
+}
