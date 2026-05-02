@@ -31,18 +31,12 @@ main .segunda{
 } 
 
 main .primeira .containerprimeira{
-    /* width: 100%; */
     max-width: 34.375rem;
-    /* margin: auto; */
-    /* margin: auto; */
     margin-left: auto;
 }
 
 main .segunda .containersegunda{
-    /* width: 100%; */
     max-width: 34.375rem;
-    /* border: 1px solid green; */
-    /* margin: auto; */
     overflow: hidden;
     margin-right: auto;
 }
@@ -58,14 +52,12 @@ main .segunda .containersegunda{
 }
 
 .primeira .containerprimeira .caixatexto{
-    /* background-color: pink; */
     font-family: "Poppins";
     margin-bottom: 50px;
 }
 
 .primeira .containerprimeira .caixatexto .texto1{
     font-weight: 400;
-    /* margin-top: 5px; */
 }
 
 .segunda{
@@ -120,7 +112,6 @@ span{
 }
 
 .informacao-crianca fieldset .caixote{
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
 }
@@ -166,7 +157,6 @@ textarea{
     outline: none;
     width: 100%;
     height:250px;
-    /* outline-offset: 1px; */
     border: 1px solid var(--cor-borda);
     border-radius: 10px;
     font-family: "Poppins";
@@ -211,4 +201,17 @@ input[type="file"]{
 
 input[type="file"]::file-selector-button {
   display: none;
+}
+
+main .primeira::-webkit-scrollbar{
+    width:15px;
+}
+
+main .primeira::-webkit-scrollbar-track {
+   border: 1px solid rgba(99, 47, 13, 0.13);
+}
+
+main .primeira::-webkit-scrollbar-thumb{
+  background: var(--cor-fonte1);
+  border-radius: 5px;
 }
