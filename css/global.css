@@ -1,9 +1,15 @@
 :root{
-    --cor-primaria: #ff8800;
-    --cor-secundaria: rgb(253, 180, 45);
-    --cor-terciaria: wheat;
+    --cor-primaria: #fdfdfd;
+    --cor-secundaria: rgb(255, 202, 103);
+    --cor-terciaria: rgb(253, 244, 229);
     --estilo-fonte: "Poppins", sans-serif;
 
     /*fonte e texto*/
     --tamanho-fonte: 1rem; /*16px 400 Poppins*/
+    --cor-fonte1: rgb(65, 43, 25);
+    --cor-borda: rgba(119, 119, 119, 0.26);
+    --borda-input: rgb(255, 160, 82);
+
+    /* Espaçamentos */
+    --espaco-container: 4rem;
 }

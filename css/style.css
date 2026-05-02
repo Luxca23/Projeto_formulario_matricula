@@ -1,4 +1,5 @@
 @import url(global.css);
+@import url(layout.css);
 
 *{
     border: 0;
@@ -7,7 +8,11 @@
 }
 
 body{
-    background-color: wheat;
-    color: var(--tamanho-fonte2)
-    
+    color: var(--cor-fonte1);
+    font-family: "Poppins";
+}
+
+fieldset{
+    padding: 0;
+    margin: 0;
 }
