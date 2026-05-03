@@ -1,0 +1,26 @@
+@import url(layout.css);
+
+.containerprimeira .informacao-crianca .parteendereco{
+    /* border: 1px solid red; */
+    height:auto;
+    margin-top: 50px;
+}
+
+.containerprimeira .informacao-crianca .parteendereco label{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerprimeira .informacao-crianca .parteendereco .infoextra{
+    /* border:1px solid green; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+}
+
+.parteendereco .infoextra .rua-numero, .parteendereco .infoextra .cidade-estado{
+    /* border:1px solid blue; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 15px;
+}
