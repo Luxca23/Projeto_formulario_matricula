@@ -75,6 +75,13 @@ main .segunda .containersegunda{
     color: var(--cor-primaria);
 }
 
+fieldset .droparea .bi-cloud-arrow-up-fill{
+    /* position: absolute; */
+    left: 50%;
+    top:50%
+}
+
+
 .segunda .containersegunda .conteudo .texto3{
     color: var(--cor-fonte1);
     margin-top:10px;
@@ -177,10 +184,8 @@ input[type="text"]:focus, input[type="date"]:focus, select:focus, textarea:focus
 fieldset .droparea{
     width:100%;
     height:auto;
-    /* background-color: green; */
     display: flex;
-    /* background-color: green; */
-
+    position: relative;
 }
 
 fieldset .droparea .nuvem{
@@ -188,20 +193,29 @@ fieldset .droparea .nuvem{
     height:50px;
 }
 
-fieldset .droparea label{
-    /* background-color: yellow; */
+fieldset .droparea #areadotexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px dashed var(--cor-fonte1);
+    border-width: 2px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+fieldset .droparea #areadotexto:hover{
+    background-color: rgb(255, 213, 158);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 input[type="file"]{
-    width:100%;
-    max-width: 100%;
-    border: 1px dashed var(--cor-borda);
-    height:250px;
-    border-width: 2px;
     display: flex;
-    /* padding: 40%; */
-    /* background-color: skyblue; */
     color:transparent;
+    opacity: 0;
+    position: relative;
+    display: none;
 }
 
 input[type="file"]::file-selector-button {
