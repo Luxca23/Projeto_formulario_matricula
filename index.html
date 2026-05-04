@@ -45,11 +45,11 @@
                         <legend>Informações da criança</legend>
                         <div class="caixote">
                             <label for="nome">Nome Completo</label>
-                            <input type="text" name="" id="nome" placeholder="Qual nome da criança..." autofocus>
+                            <input required type="text" name="" id="nome" placeholder="Qual nome da criança..." autofocus>
                         </div>
                         <div class="caixote">
                             <label for="data">Data de nascimento</label>
-                            <input type="date" name="" id="data">
+                            <input required type="date" name="" id="data">
                         </div>
 
                         <div class="genero">
@@ -69,7 +69,7 @@
                         <div class="droparea">
                             <label id="areadotexto">
                                 
-                                <input type="file" id="uploadarq">
+                                <input required type="file" id="uploadarq">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-cloud-arrow-up-fill"
                                     viewBox="0 0 16 16">
                                     <path
@@ -89,32 +89,83 @@
 
                         <label>
                             CEP
-                            <input type="number" name="cep" id="CEP">
+                            <input required type="number" name="cep" id="CEP" placeholder="00000-000">
                         </label>
 
                         <div class="infoextra">
                             <div class="rua-numero">
                                 <label>
                                     Rua
-                                    <input type="text" placeholder="Ex: Rua alvarez..." disabled>
+                                    <input required type="text" placeholder="Ex: Rua alvarez..." disabled>
                                 </label>
                                 <label>
                                     Numero
-                                    <input type="number" name="" id="">
+                                    <input required type="number" name="" id="" placeholder="N° da residencia">
                                 </label>
                             </div>
                             <div class="cidade-estado">
                                 <label>
                                     Cidade
-                                    <input type="text" placeholder="São Paulo" disabled>
+                                    <input required type="text" placeholder="São Paulo" disabled>
                                 </label>
                                 <label>
                                     Estado
-                                    <input type="text" name="" id="" disabled placeholder="SP">
+                                    <input required type="text" name="" id="" disabled placeholder="SP">
                                 </label>
                             </div>
                         </div>
                     </fieldset>
+
+                    <fieldset class="informacao-responsavel">
+                        <legend>Informações do responsavel</legend>
+
+                        <label class="nome-responsavel">
+                            Nome do responsavel
+                            <input required type="text">
+                            <i>Principal responsavel legal e contato de emergência.</i>
+                        </label>
+
+                        <label class="numero-responsavel">
+                            Telefone
+                            <input required type="number" name="tel" id="" autocomplete="tel">
+                        </label>
+
+                        <label class="email-responsavel">
+                            Email
+                            <input required type="email" name="" id="" required>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="opcoesmatricula">
+                        <legend>Opções de matricula</legend>
+
+                        <p>Selecione o turno de estudo</p>
+                        <div class="opcoesdematricula">
+
+                            <label for="um" class="matricula">
+                                <input type="radio" name="um" id="um">
+                                <p>tarde</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-brightness-high-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                                </svg>
+                            </label>
+
+                            <label for="dois" class="matricula">
+                                <input type="radio" name="um" id="dois" value="2">
+                                <p>Manhã</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cloud-sun-fill"
+                                    viewBox="0 0 16 16">
+                                    <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z" />
+                                    <path
+                                        d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+                                </svg>
+                            </label>
+
+                        </div>
+                    </fieldset>
+
                 </form>
 
             </div>
