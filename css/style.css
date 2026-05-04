@@ -57,6 +57,10 @@ fieldset{
             
     } 
 
+    main .primeira {
+        padding: 0 10px;
+    }
+
     main .segunda{
         justify-content:start;
     }
