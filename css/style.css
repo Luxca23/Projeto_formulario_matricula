@@ -57,12 +57,27 @@ fieldset{
             
     } 
 
+    .segunda .containersegunda .caixalogo {
+    display: flex;
+    column-gap: 5px;
+    align-items: baseline;
+    justify-content: center;
+    }
+
+    .containersegunda h2{
+        text-align: center;
+    }
+
+    .segunda .containersegunda .conteudo .texto3{
+    text-align: center;
+    }
+
     main .primeira .containerprimeira{
         margin-left: 0;
     }
         
     .segunda .containersegunda .imagem{
-        background-position:unset
+        background-position:center;
     }
 
     .containerprimeira .informacao-crianca .partebotao{
