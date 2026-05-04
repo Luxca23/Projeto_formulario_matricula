@@ -67,6 +67,9 @@ fieldset{
 
     .containerprimeira .informacao-crianca .partebotao{
         justify-content: center;
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 7px;
     }
 
     .parteendereco .infoextra .rua-numero, .parteendereco .infoextra .cidade-estado{
