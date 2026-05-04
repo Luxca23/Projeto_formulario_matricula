@@ -95,6 +95,14 @@ fieldset{
         column-gap: 0;
         row-gap: 15px;
     }
+
+    .containerprimeira .informacao-crianca .opcoesmatricula .opcoesdematricula{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* column-gap: 15px; */
+    row-gap: 10px;
+    }
+    
 }
 
 @media(max-width:500px){
