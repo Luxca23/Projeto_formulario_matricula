@@ -61,15 +61,15 @@ fieldset{
     display: flex;
     column-gap: 5px;
     align-items: baseline;
-    justify-content: center;
+    justify-content: start;
     }
 
     .containersegunda h2{
-        text-align: center;
+        text-align: start;
     }
 
     .segunda .containersegunda .conteudo .texto3{
-    text-align: center;
+    text-align: start;
     }
 
     main .primeira .containerprimeira{
