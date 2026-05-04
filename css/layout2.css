@@ -1,18 +1,48 @@
 @import url(global.css);
 @import url(layout.css);
 
-.containerprimeira .informacao-crianca .caixaleia{
-    border:1px solid green;
+.containerprimeira .informacao-crianca .partebotao{
     width:100%;
-    /* background-color: green; */
-    padding:20px 0;
+    padding: 15px 0 40px 0;
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+
+    & .enviar, & .salvarreposta{
+        padding:15px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    & .salvarreposta{
+        background-color: transparent;
+        border: 1px solid var(--cor-fonte1);
+        color: var(--cor-fonte1);
+
+        &:hover{
+            background-color: rgb(255, 239, 210);
+            transition: 0.2s ease-in-out;
+        }
+    }
+
+    & .enviar{
+        background-color: var(--cor-fonte1);
+        color: var(--cor-terciaria);
+        
+        &:hover{
+            background-color: rgb(128, 70, 22);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+.containerprimeira .informacao-crianca .caixaleia{
+    padding:40px 0;
 }
 
 .containerprimeira .informacao-crianca .caixaleia .leia{
-    border:1px solid red;
-    /* background-color: yellow; */
     display: flex;
-    align-items: baseline;
+    align-items:baseline;
     column-gap: 5px;
     width: 100%;
     cursor: pointer;
@@ -23,10 +53,13 @@
         
 
         & b{
-            font-weight: 500;
+            font-weight: 600;
+        }
+
+        & input[type="checkbox"]{
+            accent-color: var(--cor-fonte1);
         }
     }
-
 }
 
 .containerprimeira .informacao-crianca .parteendereco{
@@ -141,4 +174,18 @@
 .opcoesdematricula .matricula input[type="radio"]{
     align-self:start;
     justify-self: start;
+}
+
+footer{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--cor-fonte2);
+
+
+    & .metade{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
 }
