@@ -75,6 +75,10 @@ main .segunda .containersegunda{
     color: var(--cor-primaria);
 }
 
+svg{
+    color: var(--cor-fonte1)
+}
+
 fieldset .droparea .bi-cloud-arrow-up-fill{
     /* position: absolute; */
     left: 50%;
