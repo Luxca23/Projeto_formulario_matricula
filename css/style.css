@@ -39,6 +39,9 @@ fieldset{
 
     main .segunda .containersegunda{
         margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
     }
 } 
 
