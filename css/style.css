@@ -66,9 +66,10 @@ fieldset{
         justify-content: center;
     }
 
-    /* *{
-        font-size:12px
-    } */
+    .parteendereco .infoextra .rua-numero, .parteendereco .infoextra .cidade-estado{
+        column-gap: 0;
+        row-gap: 15px;
+    }
 }
 
 
