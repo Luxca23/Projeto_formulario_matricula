@@ -57,6 +57,10 @@ fieldset{
             
     } 
 
+    main .segunda{
+        justify-content:start;
+    }
+
     .segunda .containersegunda .caixalogo {
     display: flex;
     column-gap: 5px;
